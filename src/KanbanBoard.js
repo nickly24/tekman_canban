@@ -108,6 +108,7 @@ const KanbanBoard = () => {
       setTasks([...tasks, response.data]);
       setNewTask({ task: '', description: '', status: 'set' });
       setShowTaskForm(false);
+      window.location.reload()
     } catch (err) {
       console.error('Error adding task:', err);
     }
